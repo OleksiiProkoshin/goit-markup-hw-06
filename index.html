@@ -302,20 +302,19 @@
                 </ul>
             </div>
             <div class="footer__subscribe">
-                <form action="">
+                <form>
                     <h3 class="footer__subscribe_hdr">Subscribe</h3>
-                    <label for="">
-                        <input class="footer__subscribe_input" type="email" name="useremail" required
+                    <label for="useremail">
+                        <input class="footer__subscribe_input" type="email" name="useremail" id="useremail" required
                             placeholder="E-mail">
-                        <button class="footer__subscribe_button" type="submit">Subscribe
-                            <svg width="24" height="20" class="footer__subscribe_button-icon">
-                                <use href="./images/icons.svg#icon-send"></use>
-                            </svg>
-                        </button>
+                    </label>
+                    <button class="footer__subscribe_button" type="submit">Subscribe
+                        <svg width="24" height="20" class="footer__subscribe_button-icon">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </form>
-                </label>
             </div>
-
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -328,46 +327,47 @@
             <div class="modal-wrapper">
                 <h2 class="modal-header">Leave your contacts and we will call you back</h2>
                 <form name="modal-wrapper__signup-form" autocomplete="on">
-                    <label class="modal-wrapper__form-label">
+                    <label for="name" class="modal-wrapper__form-label">
                         <span class="modal-wrapper__label-text">Name</span>
-                        <div class="modal-wrapper__signup-form_input-field">
+                        <span class="modal-wrapper__signup-form_input-field">
                             <svg width="19" height="24" class="modal-wrapper__input_icon">
                                 <use href="./images/icons.svg#person"></use>
                             </svg>
-                            <input class="modal-wrapper__input-box" type="text" name="username" required minlength="3"
-                                autofocus />
-                        </div>
+                            <input class="modal-wrapper__input-box" type="text" id="name" name="username" required
+                                minlength="3" autofocus />
+                        </span>
                     </label>
 
-                    <label class="modal-wrapper__form-label">
+                    <label for="phone" class="modal-wrapper__form-label">
                         <span class="modal-wrapper__label-text">Phone</span>
-                        <div class="modal-wrapper__signup-form_input-field">
+                        <span class="modal-wrapper__signup-form_input-field">
                             <svg width="19" height="24" class="modal-wrapper__input_icon">
                                 <use href="./images/icons.svg#phone"></use>
                             </svg>
-                            <input class="modal-wrapper__input-box" type="tel" name="userphone" minlength="13"
-                                maxlength="17" required />
-                        </div>
+                            <input class="modal-wrapper__input-box" type="tel" id="phone" name="userphone"
+                                minlength="13" maxlength="17" required />
+                        </span>
                     </label>
 
-                    <label class="modal-wrapper__form-label">
+                    <label for="modal-email" class="modal-wrapper__form-label">
                         <span class="modal-wrapper__label-text">Email</span>
-                        <div class="modal-wrapper__signup-form_input-field">
+                        <span class="modal-wrapper__signup-form_input-field">
                             <svg width="19" height="24" class="modal-wrapper__input_icon">
                                 <use href="./images/icons.svg#email"></use>
                             </svg>
-                            <input class="modal-wrapper__input-box" type="email" name="useremail" required />
-                        </div>
+                            <input class="modal-wrapper__input-box" type="email" id="modal-email" name="useremail"
+                                required />
+                        </span>
                     </label>
 
-                    <label class="modal-wrapper__form-label">
+                    <label for="comment" class="modal-wrapper__form-label">
                         <span class="modal-wrapper__label-text">Comment</span>
-                        <textarea class="modal-wrapper__textarea-box" name="comment" placeholder="Text input"
-                            rows="8"></textarea>
+                        <textarea class="modal-wrapper__textarea-box" name="comment" id="comment"
+                            placeholder="Text input" rows="8"></textarea>
                     </label>
 
-                    <label>
-                        <input class="modal-wrapper__checkbox" type="checkbox" name="privacy-policy"
+                    <label for="checkbox">
+                        <input class="modal-wrapper__checkbox" type="checkbox" id="checkbox" name="privacy-policy"
                             value="privacy-policy" required />
                         <span class="modal-wrapper__custom-checkbox">
                             <svg width="10" height="8" class="modal-wrapper__custom-checkbox_icon">
