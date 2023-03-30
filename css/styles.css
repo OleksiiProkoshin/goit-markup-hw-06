@@ -518,6 +518,11 @@ img {
     outline: none;
 }
 
+.footer__subscribe_input:focus-within {
+    background-color: var(--Headings-color-Navyblue);
+    color: var(--white);
+}
+
 .footer__subscribe_button {
     position: absolute;
     left: 288px;
@@ -778,6 +783,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(117, 117, 117, 0.5);
+    padding: 8px 0 0 16px;
 }
 
 textarea {
